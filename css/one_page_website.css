@@ -1,0 +1,136 @@
+body {
+    background-color:rgb(241,241,241) ;
+}
+ h1 {
+    font-size: 60px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 80px;
+}
+h3 {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 3px rgb(154, 185, 185);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/*============================================
+NAVIGATION SECTION 
+============================================*/
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+.ui {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    height: 100%;
+    width: 100%;
+   top: 0px;
+   left: 0px;
+   text-align: center;
+}
+.menu-container{
+    max-height: 340px;
+    margin: 04 auto;
+    width: 100%;
+
+    z-index: 100;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*===========================================================
+PICTURES and information SECTION 
+===========================================================*/
+img {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: auto;
+    border-radius: 15%;
+    max-height: 200px;
+    max-width: 200px;
+    width: 200px;
+    height: 200px;
+}
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 620px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  background-color:lightcyan;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+details > p {
+  border-radius: 8px;
+  background-color: lightcyan;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+details[open] > summary {
+  background-color: lightcyan;
+}
+
+/*============================================================
+IMBEDDED VIDEO SECTION
+============================================================*/
+
+iframe {
+    border-radius: 8px;
+    border-style: groove;
+    border-color: lightpink;
+    border-width: 2px;
+}
+
+/* ==========================================================
+GET IN TOUCH SECTION 
+===========================================================*/
+
+#get h7 {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 3px rgb(154, 185, 185);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#get p {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+
+}
+#get form {
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}

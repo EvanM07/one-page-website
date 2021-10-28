@@ -4,23 +4,34 @@
 	<!-- the head of this website -->
 	<head>		
 		<meta charset= "utf-8">
-		
+        <link rel="stylesheet" type="text/css" href="./css/one_page_website.css">		
 		<title> My Smartphones</title>
 
 	</head>
 
 
 	<body>
+
 		<!-- this is the navigation element-->
-		<nav>
-			<a href="#About">About</a>
-			<a href="#Pictures">Pictures</a>
-			<a href="#Videos">Videos</a>
-			<a href="#Getintouch">Get in touch</a>
-		</nav>
+		<div class="wrap">
+			<div class="menu-container">
+				<ui class="menu">
+				<nav>
+					<a href="#About"><li>About</li></a>
+					<a href="#Pictures"><li>Pictures</li></a>
+					<a href="#Videos"><li>Videos</li></a>
+					<a href="#Getintouch"><li>Get in touch</li></a>
+				</nav>
+				</ui>
+			</div>
+		</div>
+
+	<!-- the title of the webpage-->
+	<h1>The 6 Phones</h1>	
+
 		<!-- the first section that is the about part of this website-->
 			<section>
-				<h1 id="About">About</h1>
+				<h3 id="About">About</h3>
 					<p>
 						As you can see there are 6 photos of my previous smartphones that I owned.<br>
 						Underneath each photo is a short paragraph about the base specifications<br>
@@ -35,9 +46,12 @@
 				<h3 id="Pictures">Pictures</h3>
 					<p> Please click on the down arrow to find out more about each one of the smartphones</p>
 						<div>
-						
+							<div class="photo-container">
+								<div class="photo">
 							<img src="./images/thumb/thumbnail_1.png" alt="Sorry could not load picture">
 						</div>	
+							</div>
+							</div>
 							<div>
 								<details>
 									<summary> Nokia 9 PureView </summary>
@@ -53,7 +67,7 @@
 			
 			<!-- photo container 2-->
 						<div>
-						
+
 							<img src="./images/thumb/thumbnail_2.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
@@ -73,7 +87,7 @@
 			
 			<!-- photo container 3 -->
 						<div>
-						
+
 							<img src="./images/thumb/thumbnail_3.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
@@ -92,7 +106,7 @@
 			
 			<!-- photo container 4 -->
 						<div>
-						
+
 							<img src="./images/thumb/thumbnail_4.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
@@ -111,7 +125,7 @@
 			
 			<!-- photo container 5 -->
 						<div>
-						
+
 							<img src="./images/thumb/thumbnail_5.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
@@ -129,7 +143,7 @@
 			
 			<!-- photo container 6 -->
 						<div>
-						
+
 							<img src="./images/thumb/thumbnail_6.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
@@ -143,8 +157,9 @@
 										</p>
 								</details>		
 							</div>
-			<!-- end of photo container 6 -->
 			</section>
+			<!-- end of photo container 6 -->
+
 			
 			<!-- this section has the videos about the different operating systems -->
 			<section>
@@ -158,28 +173,30 @@
 			
 			<!-- the embedded youtube videos -->
 			<section>
-				<h2> IOS </h2>
+				<h3> IOS </h3>
 					<iframe width="727" height="409" src="https://www.youtube.com/embed/kBCz54D57AM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h2> Android</h2>
+				<h3> Android</h3>
 					<iframe width="727" height="409" src="https://www.youtube.com/embed/leCGI9flgbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h2> Android Compared to IOS </h2>
+				<h3> Android Compared to IOS </h3>
 					<iframe width="727" height="409" src="https://www.youtube.com/embed/JngJLamLI1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</section>
 			
 			<!-- this section is how to get in touch with me -->
-			<section>
-				<h3 id="Getintouch">Get in touch</h3>
-					<p>
-						If you have any questions or comments please fill in you information and you email below<br>
-						and I will be sure to get back to you as soon as I can. Thank you<br>
-					</p>
-							<form action="save" method="get">
-								First Name: <input type="text" name= "First_Name"><br>
-								Last Name: <input type="text" name=  "Last_Name"><br>
-								Email: <input type="text" name= "Email"><br>
-								Comment or Question: <input type="text" name= "comment_or_Question"><br>
-									<input type="submit" value="Submit">
-							</form>	
+			<section id="get">
+				<h7 id="Getintouch">Get in touch</h7>
+						<p>
+							If you have any questions or comments please fill in you information and you email below<br>
+							and I will be sure to get back to you as soon as I can. Thank you<br>
+						</p>
+							<div class="container">
+								<form action="save" method="get">
+									First Name: <input type="text" name= "First_Name"><br>
+									Last Name: <input type="text" name=  "Last_Name"><br>
+									Email: <input type="text" name= "Email"><br>
+									Comment or Question: <input type="text" name= "comment_or_Question"><br>
+										<input type="submit" value="Submit">
+								</form>	
+							</div>
 			</section>
 	</body>
 	
