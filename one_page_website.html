@@ -4,71 +4,56 @@
 	<!-- the head of this website -->
 	<head>		
 		<meta charset= "utf-8">
-        <link rel="stylesheet" type="text/css" href="./css/one_page_website.css">		
-		<title> My Smartphones</title>
+        <link rel="stylesheet" href="./css/one_page_website.css">		
+		<title>The Phones</title>
 
 	</head>
-
 
 	<body>
 
 		<!-- this is the navigation element-->
-		<div class="wrap">
-			<div class="menu-container">
-				<ui class="menu">
+	
 				<nav>
-					<a href="#About"><li>About</li></a>
-					<a href="#Pictures"><li>Pictures</li></a>
-					<a href="#Videos"><li>Videos</li></a>
-					<a href="#Getintouch"><li>Get in touch</li></a>
+					<div class="topnav">
+					<a href="#Pictures">Pictures</a>
+					<a href="#Videos">Videos</a>
+					<a href="#Getintouch">Get in touch</a>
+					</div>
 				</nav>
-				</ui>
-			</div>
-		</div>
+
 
 	<!-- the title of the webpage-->
-	<h1>The 6 Phones</h1>	
 
-		<!-- the first section that is the about part of this website-->
-			<section>
-				<h3 id="About">About</h3>
-					<p>
-						As you can see there are 6 photos of my previous smartphones that I owned.<br>
-						Underneath each photo is a short paragraph about the base specifications<br>
-						operating system and features of each smartphone.<br>
-					</p>
-			</section>
-			
+	<h1>The Phones</h1>	
+
 				<!-- This section has the photos and the information about the phones-->
 				
 			<!-- photo container 1 -->
 			<section>
-				<h3 id="Pictures">Pictures</h3>
-					<p> Please click on the down arrow to find out more about each one of the smartphones</p>
-						<div>
+					<h2 id="Pictures">Pictures</h2>
+						<div class="container">	<p> Click on the down arrow to find out more about each smartphone</p></div>						<div>
 							<div class="photo-container">
 								<div class="photo">
-							<img src="./images/thumb/thumbnail_1.png" alt="Sorry could not load picture">
-						</div>	
+									<img src="./images/thumb/thumbnail_1.png" alt="Sorry could not load picture">
+								</div>	
 							</div>
 							</div>
-							<div>
-								<details>
-									<summary> Nokia 9 PureView </summary>
-										<p>
-											Five 12 MP cameras<br>
-											Qualcomm Snapdragon 845 SOC<br>
-											Android Operating System<br>
-											5.99” edge-to-edge pOLED QHD display with 2K resolution<br>
-										</p>
-								</details>		
-							</div>
+								<div>
+									<details>
+										<summary> Nokia 9 PureView </summary>
+											<p>
+												Five 12 MP cameras<br>
+												Qualcomm Snapdragon 845 SOC<br>
+												Android Operating System<br>
+												5.99” edge-to-edge pOLED QHD display with 2K resolution<br>
+											</p>
+									</details>		
+								</div>
 			<!-- end of photo container 1 -->
 			
 			<!-- photo container 2-->
 						<div>
-
-							<img src="./images/thumb/thumbnail_2.png" alt="Sorry could not load picture">
+						<img src="./images/thumb/thumbnail_2.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
 								<details>
@@ -87,7 +72,6 @@
 			
 			<!-- photo container 3 -->
 						<div>
-
 							<img src="./images/thumb/thumbnail_3.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
@@ -106,7 +90,6 @@
 			
 			<!-- photo container 4 -->
 						<div>
-
 							<img src="./images/thumb/thumbnail_4.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
@@ -125,7 +108,6 @@
 			
 			<!-- photo container 5 -->
 						<div>
-
 							<img src="./images/thumb/thumbnail_5.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
@@ -143,7 +125,6 @@
 			
 			<!-- photo container 6 -->
 						<div>
-
 							<img src="./images/thumb/thumbnail_6.png" alt="Sorry could not load picture">
 						</div>	
 							<div>
@@ -160,53 +141,50 @@
 			</section>
 			<!-- end of photo container 6 -->
 
-			
 			<!-- this section has the videos about the different operating systems -->
 			<section>
-				<h3 id="Videos">Videos</h3>
-					<p>
-						Some of you might have noticed that I have used both Android and IOS smartphones.<br>
-						If you are curious about these two operating systems they use, and the history of them.<br>
-						I have 3 videos below about Android and IOS and a third one doing a quick comparison of both.<br>
-					</p>
+				<h4 id="Videos">Videos</h4>
 			</section>
 			
 			<!-- the embedded youtube videos -->
 			<section>
-				<h3> IOS </h3>
+				<h5> IOS </h5>
 					<iframe width="727" height="409" src="https://www.youtube.com/embed/kBCz54D57AM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h3> Android</h3>
+				<h6> Android</h6>
 					<iframe width="727" height="409" src="https://www.youtube.com/embed/leCGI9flgbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h3> Android Compared to IOS </h3>
+				<h3> Android vs IOS </h3>
 					<iframe width="727" height="409" src="https://www.youtube.com/embed/JngJLamLI1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</section>
 			
 			<!-- this section is how to get in touch with me -->
+			<div class="container-1">
 			<section id="get">
-				<h7 id="Getintouch">Get in touch</h7>
+				<div id="Getintouch"><h7 >Get in touch</h7>	
 						<p>
-							If you have any questions or comments please fill in you information and you email below<br>
-							and I will be sure to get back to you as soon as I can. Thank you<br>
+							If you have any questions or comments please fill in you information below<br>
+							and I will be sure to get back to you as soon as I can. <br>
+							Thank you<br>
 						</p>
-							<div class="container">
-								<form action="save" method="get">
-									First Name: <input type="text" name= "First_Name"><br>
-									Last Name: <input type="text" name=  "Last_Name"><br>
-									Email: <input type="text" name= "Email"><br>
-									Comment or Question: <input type="text" name= "comment_or_Question"><br>
-										<input type="submit" value="Submit">
+							<div class=" sub-container">
+								<form action="save" method= "get">
+									<input type="text" placeholder="First Name"<br>
+									<input type="text" placeholder="Last Name"<br>
+									<input type="text" placeholder="Email"<br>
+									<input type="text" placeholder="Comment or Question"<br>
+									<input type="submit" value="Submit">
 								</form>	
 							</div>
+						</div>
 			</section>
+			</div>
 	</body>
-	
+
 	<!-- the footer of this website -->
 		<footer>
-				Evan Masters<br>
-					<p> 
-						I reply to emails from 9:00 am to 5:00pm Monday to Friday
-					
-						&copy
-					</p>
+			<p>
+				Evan Masters | 406 Stewart R.D Vancouver B.C V0R 1V0 | &copy
+				<br> Find me on <br> Facebook | Twitter<br>  Snapchat | Instagram
+			</p>
+
 		</footer>
 </html>
