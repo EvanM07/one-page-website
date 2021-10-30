@@ -194,7 +194,14 @@ GET IN TOUCH SECTION
 }
 #get form {
     align-items: center;
+}
 
+input {
+    width: 200px;
+    margin: 10px;
+    border-style: double;
+    border-width: medium;
+    border-radius: 8px;
 }
 
 .sub-container {
