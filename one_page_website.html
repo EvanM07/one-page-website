@@ -4,7 +4,8 @@
 	<!-- the head of this website -->
 	<head>		
 		<meta charset= "utf-8">
-        <link rel="stylesheet" href="./css/one_page_website.css">		
+        <link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="./JavaScript/main.js"></script>
 		<title>The Phones</title>
 
 	</head>
@@ -20,9 +21,6 @@
 					<a href="#Getintouch">Get in touch</a>
 					</div>
 				</nav>
-	<script>
-		alert('uhhhhhhhhh something red')
-	</script>
 
 	<!-- the title of the webpage-->
 
@@ -169,16 +167,100 @@
 						</p>
 							<div class=" sub-container">
 								<form action="save" method= "get">
-									<input type="text" placeholder="First Name"<br>
-									<input type="text" placeholder="Last Name"<br>
-									<input type="text" placeholder="Email"<br>
-									<input type="text" placeholder="Comment or Question"<br>
+									<input type="text" placeholder="First Name"><br>
+									<input type="text" placeholder="Last Name"><br>
+									<input type="text" placeholder="Email"><br>
+									<input type="text" placeholder="Comment or Question"><br>
 									<input type="submit" value="Submit">
 								</form>	
 							</div>
 						</div>
 			</section>
 			</div>
+
+<!--THIS IS THE START OF THE LIGHT BOX-->
+<div class="row">
+	<div class="column">
+		<img src="./images/thumb/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="sorry could not load image">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="sorry could not load image">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="sorry could not load image">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="sorry could not load image">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_5.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="sorry could not load image">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_6.png" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="sorry could not load image">
+	</div>
+</div>
+
+<!--THE MODAL/LIGHTBOX-->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+
+		<div class="mySlides">
+			<div class="numbertext">1/6</div>
+			<img src="./images/thumb/thumbnail_1.png" style="width: 100%" alt="sorry could not load image">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">2/6</div>
+			<img src="./images/thumb/thumbnail_2.png" style="width: 100%" alt="sorry could not load image">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">3/6</div>
+			<img src="./images/thumb/thumbnail_3.png" style="width: 100%" alt="sorry could not load image">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">4/6</div>
+			<img src="./images/thumb/thumbnail_4.png" style="width: 100%" alt="sorry could not load image">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">5/6</div>
+			<img src="./images/thumb/thumbnail_5.png" style="width: 100%" alt="sorry could not load image">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">6/6</div>
+			<img src="./images/thumb/thumbnail_6.png" style="width: 100%" alt="sorry could not load image">
+		</div>
+
+<!--NEXT/PREVIOUS CONTROLS-->
+<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+<a class="next" onclick="plusSlides(1)">&#10095</a>
+
+<!--CAPTION TEXT-->
+<div class="caption-container">
+	<p id="caption">Write something here </p>
+</div>
+
+<!--THUMBNAIL IMAGE CONTROLS-->
+		<div class="column">
+			<img class="demo" src="./images/thumb/thumbnail_1.png" onclick="currentSlide(1)"alt="Nokia 9 PureView">
+		</div>
+		<div class="column">
+			<img class="demo" src="./images/thumb/thumbnail_2.png" onclick="currentSlide(2)" alt="Samsung Galaxy S20">
+		</div>
+		<div class="column">
+			<img class="demo" src="./images/thumb/thumbnail_3.png" onclick="currentSlide(3)" alt="Iphone X">
+		</div>
+		<div class="column">
+			<img class="demo" src="./images/thumb/thumbnail_4.png" onclick="currentSlide(4)" alt="Pixel 4A">
+		</div>
+		<div class="column">
+			<img class="demo" src="./images/thumb/thumbnail_5.png" onclick="currentSlide(5)" alt="Iphone 6">
+		</div>
+		<div class="column">
+			<img class="demo" src="./images/thumb/thumbnail_6.png" onclick="currentSlide(6)" alt="Iphone 4">
+		</div>
+	</div>
+</div>
+
 	</body>
 
 	<!-- the footer of this website -->
